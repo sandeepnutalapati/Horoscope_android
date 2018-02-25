@@ -86,4 +86,5 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
         //textView1.setText("Fragment #" + mPage);
         return view;
     }
+
 }
