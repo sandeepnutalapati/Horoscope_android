@@ -44,6 +44,7 @@ public class WeeklyPageFragment extends android.support.v4.app.Fragment {
         final String sign = activity.getMyData();
 
         final TextView textView = view.findViewById(R.id.textView);
+        final TextView dateView = view.findViewById(R.id.date);
         String tabTitles[] = new String[]{"sunsign", "food", "career", "love", "money", "wellness"};
 
 
@@ -57,7 +58,9 @@ public class WeeklyPageFragment extends android.support.v4.app.Fragment {
                     @Override
                     public void onResponse(String response) {
                         try {
-                            textView.setText(new JSONObject(response).getString("horoscope"));
+                            String weekData = new JSONObject(response).getString("horoscope");
+                            textView.setText(weekData.substring(28));
+                            dateView.setText(weekData.substring(0,27));
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
