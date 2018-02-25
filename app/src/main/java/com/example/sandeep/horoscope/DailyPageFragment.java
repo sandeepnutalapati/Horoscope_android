@@ -47,6 +47,9 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
         final TextView textView1 = view.findViewById(R.id.textView1);
         final TextView textView2 = view.findViewById(R.id.textView2);
         final TextView textView3 = view.findViewById(R.id.textView3);
+        final TextView text_date1= view.findViewById(R.id.date1);
+        final TextView text_date2= view.findViewById(R.id.date2);
+        final TextView text_date3= view.findViewById(R.id.date3);
         String tabTitles[] = new String[]{"sunsign", "food", "career", "love", "money", "wellness"};
 
 
@@ -61,18 +64,32 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
                         String yesterday = "";
                         String today = "";
                         String tomorrow = "";
+                        String uyesterday="";
+                        String utoday="";
+                        String utomorrow="";
+                        String date1="";
+                        String date2="";
+                        String date3="";
                         try{
                             JSONObject jsonResponse = new JSONObject(response);
                             yesterday = jsonResponse.getJSONObject("yesterday").getString("horoscope");
                             today = jsonResponse.getJSONObject("today").getString("horoscope");
                             tomorrow = jsonResponse.getJSONObject("tomorrow").getString("horoscope");
-
+                            uyesterday=yesterday.substring(13);
+                            date1=yesterday.substring(0,12);
+                            utoday=today.substring(13);
+                            date2=today.substring(0,12);
+                            utomorrow=tomorrow.substring(13);
+                            date3=tomorrow.substring(0,12);
                         }catch(Exception e){
                             e.printStackTrace();
                         }
-                        textView1.setText(yesterday);
-                        textView2.setText(today);
-                        textView3.setText(tomorrow);
+                        textView1.setText(uyesterday);
+                        text_date1.setText(date1);
+                        textView2.setText(utoday);
+                        text_date2.setText(date2);
+                        textView3.setText(utomorrow);
+                        text_date3.setText(date3);
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -81,8 +98,6 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
             }
         });
         queue.add(stringRequest);
-
-
         //textView1.setText("Fragment #" + mPage);
         return view;
     }
