@@ -15,9 +15,6 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
-/**
- * Created by SANDEEP on 2/23/2018.
- */
 
 public class WeeklyPageFragment extends android.support.v4.app.Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
