@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.sandeep.horoscope.MainActivity">
 
-
     <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="0dp"
@@ -15,11 +14,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:src="@drawable/aries"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton4"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorAccent"/>
+        />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -28,11 +30,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
+        android:src="@drawable/tarus"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton5"
         app:layout_constraintEnd_toStartOf="@+id/imageButton3"
         app:layout_constraintStart_toEndOf="@+id/imageButton1"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -41,11 +46,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
+        android:src="@drawable/gemini"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -54,11 +62,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:src="@drawable/cancer"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton7"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton1"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -66,11 +77,14 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/leo"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton8"
         app:layout_constraintEnd_toStartOf="@+id/imageButton6"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -78,11 +92,14 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/virgo"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -91,11 +108,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:src="@drawable/libra"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton10"
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -103,11 +123,14 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/scorpio"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton11"
         app:layout_constraintEnd_toStartOf="@+id/imageButton9"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton9"
@@ -115,11 +138,14 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/sagittarius"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/imageButton12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
         app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton10"
@@ -128,11 +154,14 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:src="@drawable/capricorn"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton11"
@@ -140,11 +169,14 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/aquarius_update"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton12"
         app:layout_constraintStart_toEndOf="@+id/imageButton10"
         app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-        app:srcCompat="@color/colorAccent" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton12"
@@ -152,9 +184,12 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/pisces"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton11"
         app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-        app:srcCompat="@color/colorAccent" />
+        />
 </android.support.constraint.ConstraintLayout>
