@@ -26,8 +26,8 @@
         android:id="@+id/taurus"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/bg_circle"
         android:elevation="4dp"
         android:scaleType="centerCrop"
@@ -42,7 +42,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/bg_circle"
         android:elevation="4dp"
         android:scaleType="centerCrop"
@@ -55,11 +55,11 @@
 
     <TextView
         android:id="@+id/name_aries"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:text="@string/name_aries"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -71,7 +71,7 @@
 
     <TextView
         android:id="@+id/name_cancer"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -86,7 +86,7 @@
 
     <TextView
         android:id="@+id/name_leo"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -101,7 +101,7 @@
 
     <TextView
         android:id="@+id/name_virgo"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -116,7 +116,7 @@
 
     <TextView
         android:id="@+id/name_libra"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -131,7 +131,7 @@
 
     <TextView
         android:id="@+id/name_scorpio"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -146,7 +146,7 @@
 
     <TextView
         android:id="@+id/name_sagittarius"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -161,7 +161,7 @@
 
     <TextView
         android:id="@+id/name_capricorn"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -176,7 +176,7 @@
 
     <TextView
         android:id="@+id/name_aquarius"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -191,7 +191,7 @@
 
     <TextView
         android:id="@+id/name_pisces"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -222,10 +222,10 @@
 
     <TextView
         android:id="@+id/name_gemini"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
         android:text="@string/name_gemini"
         android:textAlignment="center"
@@ -240,13 +240,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="16dp" />
+        app:layout_constraintGuide_begin="35dp" />
 
     <ImageView
         android:id="@+id/gemini"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@drawable/bg_circle"
         android:elevation="4dp"
