@@ -6,190 +6,418 @@
     android:layout_height="match_parent"
     tools:context="com.example.sandeep.horoscope.MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton1"
+    <TextView
+        android:id="@+id/zodi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Choose your Zodiac Sign"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/taurus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/taurus"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/aries"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/tarus"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton5"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
-        app:layout_constraintStart_toEndOf="@+id/imageButton1"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/name_taurus"
+        app:layout_constraintEnd_toStartOf="@+id/gemini"
+        app:layout_constraintStart_toEndOf="@+id/aries"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
+    <ImageView
+        android:id="@+id/aries"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aries"
+        app:layout_constraintBottom_toTopOf="@+id/name_aries"
+        app:layout_constraintEnd_toStartOf="@+id/taurus"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/name_aries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_aries"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cancer"
+        app:layout_constraintEnd_toStartOf="@+id/name_taurus"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aries" />
+
+    <TextView
+        android:id="@+id/name_cancer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_cancer"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/libra"
+        app:layout_constraintEnd_toStartOf="@+id/name_leo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancer" />
+
+    <TextView
+        android:id="@+id/name_leo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_leo"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/scorpio"
+        app:layout_constraintEnd_toStartOf="@+id/name_virgo"
+        app:layout_constraintStart_toEndOf="@+id/name_cancer"
+        app:layout_constraintTop_toBottomOf="@+id/leo" />
+
+    <TextView
+        android:id="@+id/name_virgo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_virgo"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sagittarius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_leo"
+        app:layout_constraintTop_toBottomOf="@+id/virgo" />
+
+    <TextView
+        android:id="@+id/name_libra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_libra"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/capricorn"
+        app:layout_constraintEnd_toStartOf="@+id/name_scorpio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/libra" />
+
+    <TextView
+        android:id="@+id/name_scorpio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_scorpio"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/acquarius"
+        app:layout_constraintEnd_toStartOf="@+id/name_sagittarius"
+        app:layout_constraintStart_toEndOf="@+id/name_libra"
+        app:layout_constraintTop_toBottomOf="@+id/scorpio" />
+
+    <TextView
+        android:id="@+id/name_sagittarius"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_sagittarius"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/pisces"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_scorpio"
+        app:layout_constraintTop_toBottomOf="@+id/sagittarius" />
+
+    <TextView
+        android:id="@+id/name_capricorn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_Capricorn"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/name_aquarius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capricorn" />
+
+    <TextView
+        android:id="@+id/name_aquarius"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_aquarius"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/name_pisces"
+        app:layout_constraintStart_toEndOf="@+id/name_capricorn"
+        app:layout_constraintTop_toBottomOf="@+id/acquarius" />
+
+    <TextView
+        android:id="@+id/name_pisces"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_pisces"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_aquarius"
+        app:layout_constraintTop_toBottomOf="@+id/pisces" />
+
+
+    <TextView
+        android:id="@+id/name_taurus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_taurus"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/leo"
+        app:layout_constraintEnd_toStartOf="@+id/name_gemini"
+        app:layout_constraintStart_toEndOf="@+id/name_aries"
+        app:layout_constraintTop_toBottomOf="@+id/taurus" />
+
+    <TextView
+        android:id="@+id/name_gemini"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_gemini"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/virgo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_taurus"
+        app:layout_constraintTop_toBottomOf="@+id/gemini" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <ImageView
+        android:id="@+id/gemini"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/gemini"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintBottom_toTopOf="@+id/name_gemini"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintStart_toEndOf="@+id/taurus"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
+    <ImageView
+        android:id="@+id/virgo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:src="@drawable/cancer"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
-        />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/leo"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/virgo"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton9"
+        app:layout_constraintBottom_toTopOf="@+id/name_virgo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        />
+        app:layout_constraintStart_toEndOf="@+id/leo"
+        app:layout_constraintTop_toBottomOf="@+id/name_gemini" />
 
-    <ImageButton
-        android:id="@+id/imageButton7"
+    <ImageView
+        android:id="@+id/leo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:src="@drawable/libra"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton10"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/leo"
+        app:layout_constraintBottom_toTopOf="@+id/name_leo"
+        app:layout_constraintEnd_toStartOf="@+id/virgo"
+        app:layout_constraintStart_toEndOf="@+id/cancer"
+        app:layout_constraintTop_toBottomOf="@+id/name_taurus" />
+
+    <ImageView
+        android:id="@+id/cancer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cancer"
+        app:layout_constraintBottom_toTopOf="@+id/name_cancer"
+        app:layout_constraintEnd_toStartOf="@+id/leo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/name_aries" />
 
-    <ImageButton
-        android:id="@+id/imageButton8"
+    <ImageView
+        android:id="@+id/sagittarius"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/scorpio"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton11"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton9"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/sagittarius"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton12"
+        app:layout_constraintBottom_toTopOf="@+id/name_sagittarius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
-        />
+        app:layout_constraintStart_toEndOf="@+id/scorpio"
+        app:layout_constraintTop_toBottomOf="@+id/name_virgo" />
 
-    <ImageButton
-        android:id="@+id/imageButton10"
+    <ImageView
+        android:id="@+id/scorpio"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:src="@drawable/capricorn"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/scorpio"
+        app:layout_constraintBottom_toTopOf="@+id/name_scorpio"
+        app:layout_constraintEnd_toStartOf="@+id/sagittarius"
+        app:layout_constraintStart_toEndOf="@+id/libra"
+        app:layout_constraintTop_toBottomOf="@+id/name_leo" />
+
+    <ImageView
+        android:id="@+id/libra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/libra"
+        app:layout_constraintBottom_toTopOf="@+id/name_libra"
+        app:layout_constraintEnd_toStartOf="@+id/scorpio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/name_cancer" />
 
-    <ImageButton
-        android:id="@+id/imageButton11"
+    <ImageView
+        android:id="@+id/pisces"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/aquarius_update"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
-        app:layout_constraintStart_toEndOf="@+id/imageButton10"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
-        />
-
-    <ImageButton
-        android:id="@+id/imageButton12"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/pisces"
-        android:scaleType="fitCenter"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/name_pisces"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton11"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9"
-        />
+        app:layout_constraintStart_toEndOf="@+id/acquarius"
+        app:layout_constraintTop_toBottomOf="@+id/name_sagittarius" />
+
+    <ImageView
+        android:id="@+id/acquarius"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aquarius_update"
+        app:layout_constraintBottom_toTopOf="@+id/name_aquarius"
+        app:layout_constraintEnd_toStartOf="@+id/pisces"
+        app:layout_constraintStart_toEndOf="@+id/capricorn"
+        app:layout_constraintTop_toBottomOf="@+id/name_scorpio" />
+
+    <ImageView
+        android:id="@+id/capricorn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_circle"
+        android:elevation="4dp"
+        android:padding="25dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/capricorn"
+        app:layout_constraintBottom_toTopOf="@+id/name_capricorn"
+        app:layout_constraintEnd_toStartOf="@+id/acquarius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_libra" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="5dp" />
+
 </android.support.constraint.ConstraintLayout>

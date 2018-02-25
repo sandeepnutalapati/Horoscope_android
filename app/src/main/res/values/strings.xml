@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Horoscope</string>
+    <string name="name_aries">Aries</string>
+    <string name="name_taurus">Taurus</string>
+    <string name="name_gemini">Gemini</string>
+    <string name="name_cancer">Cancer</string>
+    <string name="name_leo">Leo</string>
+    <string name="name_virgo">Virgo</string>
+    <string name="name_libra">Libra</string>
+    <string name="name_scorpio">Scorpio</string>
+    <string name="name_sagittarius">Sagittarius</string>
+    <string name="name_Capricorn">Capricorn</string>
+    <string name="name_aquarius">Aquarius</string>
+    <string name="name_pisces">Pisces</string>
+    <string name="date_aries">March 21 - April 19</string>
+    <string name="date_taurus">April 20 - May 20</string>
+    <string name="date_gemini">May 21 - June 20</string>
+    <string name="date_cancer">June 21 - July 22</string>
+    <string name="date_leo">July 23 - August 22</string>
+    <string name="date_virgo">August 23 - September 22</string>
+    <string name="date_libra">September 23 - October 22</string>
+    <string name="date_scorpio">October 23 - November 22 </string>
+    <string name="date_sagittarius">November 22 - December 21</string>
+    <string name="date_Capricorn">December 22 - January 19</string>
+    <string name="date_aquarius">January 20 - February 18</string>
+    <string name="date_pisces">February 18 – March 20</string>
 </resources>
