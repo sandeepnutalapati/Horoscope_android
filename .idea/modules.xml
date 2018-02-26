@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Horoscope.iml" filepath="$PROJECT_DIR$/Horoscope.iml" />
+      <module fileurl="file://C:\Users\Rajesh\Desktop\Android Projects\Horoscope_android\Horoscope.iml" filepath="C:\Users\Rajesh\Desktop\Android Projects\Horoscope_android\Horoscope.iml" />
       <module fileurl="file://C:\Users\Rajesh\Desktop\Android Projects\ha\Horoscope_android\Horoscope.iml" filepath="C:\Users\Rajesh\Desktop\Android Projects\ha\Horoscope_android\Horoscope.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Horoscope_android.iml" filepath="$PROJECT_DIR$/Horoscope_android.iml" />
       <module fileurl="file://C:\Users\SANDEEP\Desktop\Projects\MaterialTabs\Horoscope\Horoscope_android.iml" filepath="C:\Users\SANDEEP\Desktop\Projects\MaterialTabs\Horoscope\Horoscope_android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

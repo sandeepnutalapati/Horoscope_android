@@ -34,10 +34,11 @@
                 android:id="@+id/date1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="DATE"
+                android:background="@drawable/bg_line"
                 android:padding="10dp"
+                android:text="DATE"
                 android:textAlignment="center"
-                android:textSize="18sp" />
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/textView1"
@@ -72,6 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="DATE"
+                android:background="@drawable/bg_line"
                 android:padding="10dp"
                 android:textAlignment="center"
                 android:textSize="18sp" />
@@ -110,6 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="DATE"
+                android:background="@drawable/bg_line"
                 android:padding="10dp"
                 android:textAlignment="center"
                 android:textSize="18sp" />

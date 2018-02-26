@@ -34,7 +34,6 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
             return DailyPageFragment.newInstance(position + 1);
         }
     }
-
     @Override
     public CharSequence getPageTitle(int position) {
         return tabTitles[position];
