@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 public class HoroscopeActivity extends AppCompatActivity{
 
@@ -29,6 +30,7 @@ public class HoroscopeActivity extends AppCompatActivity{
         getWindow().setExitTransition(slide);
         getWindow().setEnterTransition(slide);
         getWindow().setAllowEnterTransitionOverlap(false);
+
         viewPager=findViewById(R.id.viewpager);
         viewPager.setPageTransformer(true,new ZoomOutPageTransformer());
         tabLayout=findViewById(R.id.sliding_tabs);
@@ -45,7 +47,6 @@ public class HoroscopeActivity extends AppCompatActivity{
         int[] ints={R.drawable.aries,R.drawable.tarus,R.drawable.gemini,R.drawable.cancer,R.drawable.leo,R.drawable.virgo,R.drawable.libra,R.drawable.scorpio,R.drawable.sagittarius,R.drawable.capricorn,R.drawable.aquarius_update,R.drawable.pisces};
         thisfader.setImageDrawable(getDrawable(ints[sign-1]));
         getSupportActionBar().setTitle(signs[sign-1]);
-
         data = data+sign;
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
@@ -60,7 +61,5 @@ public class HoroscopeActivity extends AppCompatActivity{
     public String getMyData() {
         return data;
     }
-
-
 }
 

@@ -373,7 +373,7 @@
         android:elevation="4dp"
         android:scaleType="centerCrop"
         android:src="@drawable/pisces"
-        android:onClick="onClick"
+        android:onClick="gotest"
         app:layout_constraintBottom_toTopOf="@+id/name_pisces"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/acquarius"

@@ -112,4 +112,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Bundle bundle= ActivityOptions.makeSceneTransitionAnimation(this,v,"fader").toBundle();
         startActivity(intent,bundle);
     }
+    void gotest(View v){
+        Intent intent=new Intent(this,test.class);
+        startActivity(intent);
+    }
 }

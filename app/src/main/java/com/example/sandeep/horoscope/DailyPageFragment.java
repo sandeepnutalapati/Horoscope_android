@@ -1,9 +1,11 @@
 package com.example.sandeep.horoscope;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -21,6 +23,13 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
 
     private int mPage;
+     TextView textView1;
+     TextView textView2;
+     TextView textView3;
+     TextView text_date1;
+     TextView text_date2;
+     TextView text_date3;
+     ProgressBar progressBar;
 
     public static DailyPageFragment newInstance(int page) {
         Bundle args = new Bundle();
@@ -40,18 +49,26 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_daily_page, container, false);
+        textView1 = view.findViewById(R.id.textView1);
+        textView2 = view.findViewById(R.id.textView2);
+        textView3 = view.findViewById(R.id.textView3);
+        text_date1= view.findViewById(R.id.date1);
+        text_date2= view.findViewById(R.id.date2);
+        text_date3= view.findViewById(R.id.date3);
+        progressBar=view.findViewById(R.id.progress);
+        text_date1.setVisibility(View.GONE);
+        text_date2.setVisibility(View.GONE);
+        text_date3.setVisibility(View.GONE);
+        textView1.setVisibility(View.GONE);
+        textView2.setVisibility(View.GONE);
+        textView3.setVisibility(View.GONE);
+        progressBar.setVisibility(View.VISIBLE);
 
         HoroscopeActivity activity = (HoroscopeActivity) getActivity();
         final String sign = activity.getMyData();
 
-        final TextView textView1 = view.findViewById(R.id.textView1);
-        final TextView textView2 = view.findViewById(R.id.textView2);
-        final TextView textView3 = view.findViewById(R.id.textView3);
-        final TextView text_date1= view.findViewById(R.id.date1);
-        final TextView text_date2= view.findViewById(R.id.date2);
-        final TextView text_date3= view.findViewById(R.id.date3);
-        String tabTitles[] = new String[]{"sunsign", "food", "career", "love", "money", "wellness"};
 
+        String tabTitles[] = new String[]{"sunsign", "food", "career", "love", "money", "wellness"};
 
         RequestQueue queue = Volley.newRequestQueue(getActivity().getApplicationContext());
         String category = "" + tabTitles[mPage - 1];
@@ -78,6 +95,13 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
                         text_date2.setText(today.substring(0,12));
                         textView3.setText(tomorrow.substring(13));
                         text_date3.setText(tomorrow.substring(0,12));
+                        text_date1.setVisibility(View.VISIBLE);
+                        text_date2.setVisibility(View.VISIBLE);
+                        text_date3.setVisibility(View.VISIBLE);
+                        textView1.setVisibility(View.VISIBLE);
+                        textView2.setVisibility(View.VISIBLE);
+                        textView3.setVisibility(View.VISIBLE);
+                        progressBar.setVisibility(View.GONE);
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -87,6 +111,8 @@ public class DailyPageFragment extends android.support.v4.app.Fragment {
         });
         queue.add(stringRequest);
         //textView1.setText("Fragment #" + mPage);
+
+
         return view;
     }
 
